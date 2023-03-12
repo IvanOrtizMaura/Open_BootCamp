@@ -315,7 +315,10 @@
 </div>
 
 <div class="content" role="main">
-  <h1>Hola Iván</h1>
+
+  <!-- Creamos un imput para trabajar con NgModel  -->
+  <input type="text" placeholder="Nombre usuario" [(ngModel)]="nombre" />
+  <app-saludo [nombre]="nombre" (mensajeEmiter)="recibirMensajeHijo($event)"></app-saludo>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
