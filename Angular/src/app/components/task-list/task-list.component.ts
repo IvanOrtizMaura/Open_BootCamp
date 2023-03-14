@@ -19,4 +19,7 @@ export class TaskListComponent {
     completed: true,
     level: Levels.Urgent,
   };
+  deleteTask(task: ITask) {
+    alert(`Se procede a eliminar la tarea: ${task.title}`);
+  }
 }
