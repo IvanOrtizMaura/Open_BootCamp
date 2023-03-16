@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { SaludoComponent } from './components/saludo/saludo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListModule } from './modules/list/list.module';
+import { ListaContactoComponent } from './components/lista-contacto/lista-contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludoComponent,
+    ListaContactoComponent,
   ],
   imports: [
     BrowserModule,

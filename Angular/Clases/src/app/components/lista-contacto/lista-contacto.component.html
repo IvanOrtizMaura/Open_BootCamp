@@ -1,0 +1,6 @@
+<h3>Lista de contactos</h3>
+<div *ngFor="let contacto of listaContactos; let i = index; let even = even">
+    <div class="contacto" (click)="obtenerDatos(contacto.id)">
+        <p>Nombre: {{ contacto.nombre }}</p>
+    </div>
+</div>
